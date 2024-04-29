@@ -1,57 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Cadastro de Reserva de Vaga</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        label, input, button { display: block; margin: 10px 0; }
-        .container { width: 300px; margin: 50px auto; }
-        button { padding: 10px; }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Cadastro de Reserva</h1>
-        <form id="reservationForm">
-            <label for="licensePlate">Placa do veículo:</label>
-            <input type="text" id="licensePlate" required>
+        <form id="formCadastro">
+            <label for="placa">Placa do veículo:</label>
+            <input type="text" id="placa" required="">
 
-            <label for="ownerName">Nome do proprietário:</label>
-            <input type="text" id="ownerName" required>
+            <label for="proprietario">Proprietário:</label>
+            <input type="text" id="proprietario" required="">
 
-            <label for="apartmentNumber">Número do apartamento:</label>
-            <input type="text" id="apartmentNumber" required>
+            <label for="apartamento">Número do apartamento:</label>
+            <input type="text" id="apartamento" required="">
 
-            <label for="blockNumber">Bloco do apartamento:</label>
-            <input type="text" id="blockNumber">
+            <label for="bloco">Bloco do apartamento:</label>
+            <input type="text" id="bloco">
 
-            <label for="vehicleModel">Modelo do veículo:</label>
-            <input type="text" id="vehicleModel">
+            <label for="modelo">Modelo do veículo:</label>
+            <input type="text" id="modelo">
 
-            <label for="vehicleColor">Cor do veículo:</label>
-            <input type="text" id="vehicleColor">
+            <label for="cor">Cor do veículo:</label>
+            <input type="text" id="cor">
 
-            <label for="parkingSpot">Número da vaga de estacionamento:</label>
-            <input type="text" id="parkingSpot" required>
+            <label for="vaga">Número da vaga de estacionamento:</label>
+            <input type="text" id="vaga" required="">
 
-            <button type="button" onclick="saveReservation()">Salvar</button>
+            <button type="submit" class="button">Salvar</button>
         </form>
-    </div>
-
-    <script>
-        function saveReservation() {
-            console.log({
-                Placa: document.getElementById('licensePlate').value,
-                Proprietário: document.getElementById('ownerName').value,
-                Apartamento: document.getElementById('apartmentNumber').value,
-                Bloco: document.getElementById('blockNumber').value,
-                Modelo: document.getElementById('vehicleModel').value,
-                Cor: document.getElementById('vehicleColor').value,
-                Vaga: document.getElementById('parkingSpot').value
-            });
-            alert('Cadastro realizado com sucesso!');
-        }
-    </script>
+        <div id="mensagemSucesso">Cadastro realizado com sucesso!</div>
+    </div>    
 </body>
 </html>

@@ -1,44 +1,82 @@
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
+    padding: 0;
     background: #f4f4f4;
     text-align: center;
 }
 
 h1 {
     color: #333;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 form {
     margin-top: 20px;
 }
 
+label {
+    display: block;
+    margin-bottom: 7px;
+    color: #666;
+}
+
 input[type="text"], button {
-    margin-top: 10px;
-    padding: 10px;
-    width: 95%;
+    margin-top: 5px;
+    padding: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
 }
 
 .button {
     display: inline-block;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 10px 0;
     background: #007BFF;
     color: white;
     text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
 
 .button:hover {
     background: #0056b3;
 }
 
-table {
+.table {
     width: 100%;
-    margin-top: 20px;
+    border-collapse: collapse;
 }
 
-th, td {
+.table th, .table td {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     text-align: left;
+}
+
+.table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#mensagemSucesso {
+    color: green;
+    display: none;
 }
