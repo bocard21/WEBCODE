@@ -1,5 +1,5 @@
-function submitForm(event) {
-    event.preventDefault();
+function saveReservation(event) {
+    event.preventDefault(); 
 
     const dadosCadastro = {
         Placa: document.getElementById('placa').value,
@@ -13,7 +13,7 @@ function submitForm(event) {
 
     console.log('Cadastro realizado com sucesso:', dadosCadastro);
     document.getElementById('mensagemSucesso').style.display = 'block';
-    setTimeout(() => document.getElementById('mensagemSucesso').style.display = 'none', 3000);
+    setTimeout(() => {
+        document.getElementById('mensagemSucesso').style.display = 'none';
+    }, 3000);
 }
-
-document.getElementById('formCadastro').addEventListener('submit', submitForm);

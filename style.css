@@ -13,7 +13,7 @@ h1 {
 .container {
     width: 50%;
     margin: 0 auto;
-    padding: 8px;
+    padding: 7px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -30,8 +30,8 @@ label {
 
 input[type="text"], button {
     margin-top: 5px;
-    padding: 0;
-    width: 100%;
+    padding: 7px;
+    width: 95%;
     border: 1px solid #ccc;
     border-radius: 3px;
     box-sizing: border-box;
